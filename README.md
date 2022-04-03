@@ -1,5 +1,5 @@
-============================= [ AInput ] ============================= 
-                        by Michael McCluskey
+============================= [ AInput ] =============================
+by Michael McCluskey
 
 This script package utilizes Unity's Event system, coroutines,
 and a bit of magic to provide a more configurable option to

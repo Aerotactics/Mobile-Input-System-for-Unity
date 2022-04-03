@@ -23,22 +23,22 @@ has been down.
 
 === Events ===
 
-* AInput events use the function signature: 
+AInput events use the function signature: 
 
     void Function(AInput.Touch)
 
-    for single input and:
+for single input and:
 
     void Function(AInput.Touch, AInput.Touch)
 
-    for double input.
+for double input.
 
-* Write a function with this signature in your script, then add:
+Write a function with this signature in your script, then add:
     
     AInput.{event}.AddListener(Function);
 
-    to your scripts's Start function, replacing {event} with
-    your chosen event. All events are listed below.
+to your scripts's Start function, replacing {event} with
+your chosen event. All events are listed below.
 
 =============================   EVENTS   =============================
 
@@ -47,14 +47,16 @@ has been down.
     * Currently, only a minimum tap time is checked.
 
 * Single Input Events
-    touchStartEvent - When a touch starts (useful for instant touch checks)
-    touchEndEvent - When a touch ends (useful for custom checks)
     tapEvent - A single tap
     doubleTapEvent - 2 consecutive taps
     multitapEvent - 3+ taps. You can get the tap count from Input.tapCount
     flickEvent - Lifting the touch has velocity. You can check input.deltaPosition for the last movement delta
     swipeEvent - A short, configured slide
 
+    touchEvent - Triggers each frame while a touch is town
+    touchStartEvent - When a touch starts (useful for instant touch checks)
+    touchEndEvent - When a touch ends (useful for custom checks)
+    
     longTapEvent - A stationary touch that extends the maximum tap time
     longTapBeginEvent
     longTapEndEvent

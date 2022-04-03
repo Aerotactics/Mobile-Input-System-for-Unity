@@ -1,4 +1,4 @@
-============================= [ AInput ] =============================
+============================= [ AInput ] ============================= 
                         by Michael McCluskey
 
 This script package utilizes Unity's Event system, coroutines,

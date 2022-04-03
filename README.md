@@ -1,5 +1,4 @@
-============================= [ AInput ] ============================= 
-
+============================= [ AInput ] =============================  
 by Michael McCluskey
 
 This script package utilizes Unity's Event system, coroutines,
@@ -12,11 +11,11 @@ has been down.
 
 =============================   USAGE   ==============================
 
-* Static members:
-    touches - A reference to the internal ATouch array
-    touchCount - Amount of touches on screen
-    lastTouch - The last touch that had an interaction
-    tapCount - The tap count of the last touch
+* Static members:  
+    touches - A reference to the internal ATouch array  
+    touchCount - Amount of touches on screen  
+    lastTouch - The last touch that had an interaction  
+    tapCount - The tap count of the last touch  
     lastCollision - The last collider any touch had hit
 
 * Only 1 AInput InputComponent is expected in the scene
@@ -42,32 +41,32 @@ your chosen event. All events are listed below.
 
 =============================   EVENTS   =============================
 
-* Utility
+* Utility  
     suspiciousBehavio(u)rEvent - This event will fire whenever suspicious behavior is found.
     * Currently, only a minimum tap time is checked.
 
-* Single Input Events
-    tapEvent - A single tap
-    doubleTapEvent - 2 consecutive taps
-    multitapEvent - 3+ taps. You can get the tap count from Input.tapCount
-    flickEvent - Lifting the touch has velocity. You can check input.deltaPosition for the last movement delta
+* Single Input Events  
+    tapEvent - A single tap  
+    doubleTapEvent - 2 consecutive taps  
+    multitapEvent - 3+ taps. You can get the tap count from Input.tapCount  
+    flickEvent - Lifting the touch has velocity. You can check input.deltaPosition for the last movement delta  
     swipeEvent - A short, configured slide
 
-    touchEvent - Triggers each frame while a touch is town
-    touchStartEvent - When a touch starts (useful for instant touch checks)
+    touchEvent - Triggers each frame while a touch is town  
+    touchStartEvent - When a touch starts (useful for instant touch checks)  
     touchEndEvent - When a touch ends (useful for custom checks)
     
-    longTapEvent - A stationary touch that extends the maximum tap time
-    longTapBeginEvent
-    longTapEndEvent
+    longTapEvent - A stationary touch that extends the maximum tap time  
+    longTapBeginEvent  
+    longTapEndEvent  
     longTapCancelEvent
 
     slideEvent - Any touch motion produces this event (configurable)
-    slideBeginEvent
-    slideEndEvent
+    slideBeginEvent  
+    slideEndEvent  
     slideCancelEvent
 
-* Double Input Events
+* Double Input Events  
     pinchEvent - 2 touches are both sliding
      * Slides are disabled while a pinch event occurs
      

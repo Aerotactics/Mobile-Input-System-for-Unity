@@ -12,8 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a359e1258472544491046ff1fb01be3, type: 3}
   m_Name: DefaultInputConfig
   m_EditorClassIdentifier: 
-  maxTouches: 2
+  useMouseForInputs: 0
+  showDebugUI: 0
   minimalRaycasting: 1
+  maxTouches: 2
   maxTapTime: 0.5
   maxConsecutiveTouchTime: 0.5
   maxSuspiciousTime: 0.03
